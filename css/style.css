@@ -132,4 +132,7 @@ footer {
   .quoteArea {
     margin-top: 0px;
   }
+   #machine {
+    margin-top: -3%;
+  }
 }
