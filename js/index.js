@@ -19,5 +19,9 @@ $(".quoteArea").click(function() {
 
 //tweet button activate!
 $("#tweetQuote").click(function() {
+    if($("#wit").text().length > 140) {
+      alert("Great Googly Moogly, too long to tweet!");
+      return;
+    }
     window.open("https://twitter.com/intent/tweet?text=" + $("#wit").text());
 });
