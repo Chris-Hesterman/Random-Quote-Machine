@@ -124,3 +124,12 @@ footer {
     padding-right: 1%;
   }
 }
+
+@media (max-device-width: 1000px) and (orientation: landscape) {
+  .zappa {
+    margin-top: 0px;
+  }
+  .quoteArea {
+    margin-top: 0px;
+  }
+}
