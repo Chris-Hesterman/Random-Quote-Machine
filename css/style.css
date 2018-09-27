@@ -6,6 +6,7 @@ html {
 body {
   background: url("https://github.com/Chris-Hesterman/ch-images/blob/master/ControlPanel.jpg?raw=true");
   background-size: cover;
+  background-color: black;
   margin: 0 0 25px;
   background-repeat: no-repeat;
   
