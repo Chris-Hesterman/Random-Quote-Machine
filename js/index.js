@@ -2,26 +2,27 @@ var quotes = ["You can't be a real country unless you have a beer and an airline
 
 
 
-$(document).ready();
+$(document).ready(function() {
 
-//assign a random quote
-$(".quoteArea").click(function() {
-  var newQuote = Math.floor(Math.random() * quotes.length);
-//fade in/out quotes
-  $(".quoteArea").animate({opacity: 0}, 1000);
-  $("#wit").animate({opacity: 0}, 1000, function() {
-    $("#wit").text("'" + quotes[newQuote] + "'").animate({opacity: 1}, 1000);
- //make sure no line break at hyphen
-    $("#wit").append("<nobr> -FZ</nobr>").animate({opacity: 1}, 1000);
-    $(".quoteArea").animate({opacity: 1}, 500);
+  //assign a random quote
+  $(".quoteArea").click(function() {
+    var newQuote = Math.floor(Math.random() * quotes.length);
+  //fade in/out quotes
+    $(".quoteArea").animate({opacity: 0}, 1000);
+    $("#wit").animate({opacity: 0}, 1000, function() {
+      $("#wit").text("'" + quotes[newQuote] + "'").animate({opacity: 1}, 1000);
+   //make sure no line break at hyphen
+      $("#wit").append("<nobr> -FZ</nobr>").animate({opacity: 1}, 1000);
+      $(".quoteArea").animate({opacity: 1}, 500);
+     });
    });
- });
 
-//tweet button activate!
-$("#tweetQuote").click(function() {
-    if($("#wit").text().length > 140) {
-      alert("Great Googly Moogly, too long to tweet!");
-      return;
-    }
-    window.open("https://twitter.com/intent/tweet?text=" + $("#wit").text());
+  //tweet button activate!
+  $("#tweetQuote").click(function() {
+      if($("#wit").text().length > 140) {
+        alert("Great Googly Moogly, too long to tweet!");
+        return;
+      }
+      window.open("https://twitter.com/intent/tweet?text=" + $("#wit").text());
+  });
 });
