@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   //tweet button activate!
   $("#tweetQuote").click(function() {
-      if($("#wit").text().length > 140) {
+      if($("#wit").text().length > 280) {
         alert("Great Googly Moogly, too long to tweet!");
         return;
       }
