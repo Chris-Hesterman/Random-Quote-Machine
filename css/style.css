@@ -1,26 +1,25 @@
 html {
-  position: relative;
-  min-height: 100%
+  min-height: 100%;
+  position: relative; 
 }
 
 body {
   background: url("https://github.com/Chris-Hesterman/ch-images/blob/master/ControlPanel.jpg?raw=true");
-  background-size: cover;
   background-color: black;
-  margin: 0 0 25px;
   background-repeat: no-repeat;
-  
+  background-size: cover;
+  margin: 0 0 25px;
 }
  
 .zappa {
+  background-color: rgba(0,0,0,.7);
   border: double 5px red;
-  margin-top: 8%;
-  background-color: rgba(0,0,0,.7)
+  margin-top: 8%; 
 }
 
 #frank, #machine {
-  text-align: center;
   color: yellow;
+  text-align: center;
 }
 
 #frank {
@@ -28,6 +27,7 @@ body {
   font-size: 6rem;
   letter-spacing: 5px;
 }
+
 #machine {
   font-size: 3rem;
 }
@@ -41,34 +41,37 @@ body {
 }
 
 #wit {
+  color: white;
   font-size: 2rem;
   text-align: center;
-  color: white;
+  
 }
 
 .btn {
-  height: 40px;
-  width: 120px;
   background-color: rgb(0, 172, 237);
   color: white;
   font-size: 1.75rem;
   margin-top: 3%;
+  height: 40px;
+  width: 120px;
 }
+
 #tweeter {
   text-align: center;
 }
 
 footer {
-  position: absolute;
-  text-align: center;
   bottom: 0;
   height: 25px;
-  width: 100%;
   overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 100%; 
 }
 
-#portsite {
+#mysite {
   color: yellow;
+  opacity: .7;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -83,9 +86,9 @@ footer {
     font-size: 3.5rem;
   }
   .btn {
+    font-size: 2.5rem;
     height: 60px;
     width: 175px;
-    font-size: 2.5rem
   }
 }
 
@@ -96,7 +99,6 @@ footer {
   .btn {
     margin-top: 5%;
   }
-  
   .quoteArea {
     padding-right: 5%;
     padding-left: 5%;
@@ -133,7 +135,8 @@ footer {
   .quoteArea {
     margin-top: 0px;
   }
-   #machine {
+  #machine {
     margin-top: -4%;
   }
 }
+
